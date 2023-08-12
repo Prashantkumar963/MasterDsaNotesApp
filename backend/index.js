@@ -12,7 +12,8 @@ const notesRoute = require('./routes/notes')
 const app = express()
 
 // mongoose init
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/inotebook'
+const dbUrl = process.env.DB_URL || 'mongodb+srv://prashantkumar:AknfuvrZvd60zwxT@cluster0.f7r9usg.mongodb.net/?retryWrites=true&w=majority'
+// const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/inotebook'
 async function main() {
   await mongoose.connect(dbUrl);
   console.log("Database connected");
